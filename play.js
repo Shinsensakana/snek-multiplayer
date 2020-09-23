@@ -1,4 +1,12 @@
 #!/usr/bin/env node
+const { connect } = require('./client')
+const net = require('net');
+
+/**
+ * Establishes connection with the game server
+ */
+console.log('Connecting ...');
+connect();
 
 process.stdout.write('\x07');
 
